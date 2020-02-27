@@ -1,0 +1,1123 @@
+body {
+  margin: 0;
+}
+
+.header-wrapper {
+  min-height: 200px;
+  height: 350px;
+  width: 100%;
+}
+
+.ekosem-logo-wrapper {
+  height: 60%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.ekosem-logo-main {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 30%;
+  flex-wrap: nowrap;
+}
+
+.ekosem-mobile-nav-wrapper-menu {
+  display: none;
+  background-color: #11cf0d;
+  color: white;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  z-index: 1001;
+  border-radius: 0 0 25em 0;
+  transform: scale(0);
+  transform-origin: top left;
+  transition: all 2s cubic-bezier(0.455, 0.03, 0.515, 0.955) 0.1s;
+}
+
+.ekosem-mobile-nav-wrapper-menu.animate {
+  border-radius: 0 0 0 0;
+  transform: scale(1);
+}
+
+.mobile-menu-bar {
+  width: 100%;
+  z-index: 1001;
+  position: fixed;
+  background-color: dimgrey;
+}
+
+.mobile-menu-bar,
+.mobile-menu-bar-collapsed {
+  display: none;
+}
+
+.ekosem-mobile-nav-wrapper-menu {
+  display: none;
+}
+
+.ekosem-mobile-nav-wrapper-menu .nav-anchor,
+.ekosem-mobile-nav-wrapper-menu .mobile-menu-bar-collapsed {
+  margin-bottom: 5px;
+}
+
+.mobile-menu-expand,
+.mobile-menu-collapse {
+  display: flex;
+  align-items: center;
+  font-family: "Quicksand", sans-serif;
+  font-weight: bold;
+  cursor: context-menu;
+}
+
+.menu-icon,
+.menu-icon-collapse {
+  font-size: 2.5em;
+  color: #11cf0d;
+  cursor: pointer;
+  outline: none;
+}
+
+.menu-icon-collapse,
+.mobile-menu-expand {
+  color: white !important;
+}
+
+.ekosem-logo-main a,
+.nav-span {
+  text-decoration: none !important;
+}
+
+.ekosem-navbar {
+  width: 100%;
+  height: 40%;
+  background-color: #11cf0d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ekosem-nav-links {
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav-anchor {
+  text-decoration: none !important;
+  transition: all 1s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.nav-anchor:hover {
+  transform: translateY(-10px);
+}
+
+.logo-text {
+  color: #11cf0d;
+  font-size: 24pt;
+  font-family: "Quicksand", sans-serif;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.nav-span {
+  font-family: "Cabin", sans-serif;
+  font-size: 14pt;
+  color: white;
+}
+
+.main-slider-container,
+.schooling-sign-up-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 530px;
+  height: 655px;
+  width: 100%;
+}
+
+.schooling-sign-up-wrapper {
+  background-color: beige;
+}
+
+.schooling-sign-up-header {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.schooling-about {
+  margin-top: 20px;
+  text-align: justify;
+  font-family: "Quicksand", sans-serif;
+}
+
+.schooling-button-div {
+  margin-top: 20px;
+  outline: none;
+}
+
+.confirm-participants {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  outline: none;
+}
+
+.schooling-participants {
+  margin-bottom: 40px;
+}
+
+.schooling-participants .row {
+  margin-bottom: 10px;
+}
+
+.sign-up-button-index {
+  position: relative;
+  outline: none;
+  background-color: white;
+  border: 2px solid white;
+  color: black;
+  padding: 10px 26px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: "Century Gothic";
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 2px 2px 2px 2px;
+  transition: color 0.1s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.sign-up-button-index:focus {
+  outline: none !important;
+}
+
+.sign-up-button-index::before {
+  content: "";
+  display: flex;
+  align-items: center;
+  outline: none;
+  justify-content: center;
+  border: 2px solid #11cf0d;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transition: all 0.1s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.sign-up-button-index:hover::before {
+  transform: skewY(4deg);
+}
+
+.sign-up-button-index:hover::before .sign-up-button-index {
+  color: #11cf0d;
+}
+
+.sign-up-form-wrapper,
+.schooling-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sign-up-form-wrapper {
+  margin-bottom: 20px;
+}
+
+.form-main {
+  width: 70%;
+}
+
+.form-group {
+  width: 100%;
+}
+
+.schooling-form {
+  flex-direction: column;
+}
+
+.main-slider-container::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url("paper-1468883_1920.jpg");
+  width: 100%;
+  height: 100%;
+  background-repeat: round;
+  opacity: 0.6;
+  z-index: -1;
+}
+
+.slick-dots li button:before {
+  font-size: 15px !important;
+  line-height: 20px !important;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #11cf0d !important;
+}
+
+.post-slider-wrapper {
+  width: 60%;
+  height: 100%;
+}
+
+.slick-list,
+.slick-track {
+  height: 100%;
+}
+
+.slick-dots {
+  bottom: 25px !important;
+}
+
+.post-slider-main {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 60%;
+  height: 100% !important;
+  text-align: justify;
+}
+
+.post-slider-main a {
+  text-decoration: none;
+  color: black;
+  transition: all 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) 0.1s;
+}
+
+.post-slider-main a:hover {
+  color: #11cf0d;
+}
+
+.slider-post-excerpt {
+  width: 50%;
+  font-weight: 600;
+  font-family: "Quicksand", sans-serif;
+}
+
+.ekosem-footer-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #11cf0d;
+  min-height: 125px;
+  height: 125px;
+}
+
+.ekosem-footer-main {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.ekosem-footer-span {
+  font-weight: bold;
+  font-family: "Quicksand", sans-serif;
+  color: white;
+}
+
+.main-single-post-wrapper,
+.post-wrapper,
+.single-page-main-wrapper,
+.single-page-main-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  min-height: 530px;
+}
+
+.post-wrapper {
+  width: 50%;
+  background-color: whitesmoke;
+}
+
+.post-content-text {
+  text-align: justify;
+  margin: 20px 20px;
+  font-family: "Quicksand", sans-serif;
+}
+
+.post-title {
+  margin-bottom: 5%;
+  margin-left: 20px;
+}
+
+.post-comments {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(228, 228, 228, 0.856);
+}
+
+[class="post-comm-text"] {
+  margin-top: 2% !important;
+}
+
+[class="comment-divider"] {
+  border: 2px solid #11cf0d;
+  width: 50%;
+  box-sizing: border-box;
+}
+
+.post-comm-meta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Open Sans", sans-serif;
+}
+
+.post-comm-content {
+  text-align: justify;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 10px;
+  font-family: "Quicksand", sans-serif;
+}
+
+.post-comments-text {
+  margin-bottom: 10px;
+  font-size: 14pt;
+  font-weight: bold;
+}
+
+.main-single-post-wrapper::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url("paper-1468883_1920.jpg");
+  background-repeat: round;
+  opacity: 0.6;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.display-recent-posts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-inline-start: 0;
+  margin-top: 2%;
+}
+
+.recent-posts-header {
+  font-weight: bold;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.5em;
+}
+
+.display-recent-posts li {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  counter-increment: index;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.last-10-posts {
+  text-align: center;
+  color: #11cf0d;
+  font-weight: bold;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1em;
+  text-decoration: none !important;
+  transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.last-10-posts:hover {
+  color: rgba(0, 0, 0, 0.966);
+  transform: translateX(5px);
+}
+
+.display-recent-posts li::before {
+  align-self: flex-start;
+  font-variant-numeric: normal;
+  padding-right: 20px;
+  content: counters(index, ".", decimal-leading-zero);
+  font-size: 2em;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(16, 207, 13, 0.884),
+    rgba(16, 207, 13, 0.884)
+  );
+  background-attachment: fixed;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.page-wrapper {
+  width: 50%;
+  background-color: rgba(235, 235, 235, 0.911);
+  font-family: "Domine", sans-serif;
+}
+
+.page-title {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.page-title h2 {
+  font-weight: bold;
+}
+
+.page-content {
+  padding: 20px;
+  text-align: justify;
+}
+
+.post-title a {
+  color: #11cf0d;
+  text-decoration: none;
+  transition: all 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) 0.1s;
+  font-weight: bold;
+}
+
+.post-title a:hover {
+  color: black;
+}
+
+.page-content,
+.current-schooling-main-wrapper {
+  width: 100%;
+}
+
+.single-page-main-wrapper::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url("paper-1468883_1920.jpg");
+  width: 100%;
+  height: 100%;
+  opacity: 0.4;
+  z-index: -1;
+  background-repeat: round;
+}
+
+.ekosem-contact-main-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  min-height: 530px;
+}
+
+.ekosem-contact-main-wrapper::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url("paper-1468883_1920.jpg");
+  width: 100%;
+  height: 100%;
+  opacity: 0.6;
+  z-index: -1;
+  background-repeat: round;
+}
+
+.ekosem-contact-wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 60%;
+  background-color: rgba(255, 255, 255, 0.801);
+  font-family: "Open Sans", sans-serif;
+}
+
+.contact-wrapper {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  margin-top: 4%;
+}
+
+/*WP FORM*/
+[class="wpforms-container wpforms-container-full"] {
+  width: 100% !important;
+}
+
+[class="wpforms-field-label"] {
+  margin-bottom: 10px !important;
+  text-align: left !important;
+}
+
+.map-ekosem-leaflet-location {
+  height: 100%;
+  width: 100%;
+  margin: 5% 0 5% 0;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.contact-data {
+  margin: 20px 0 0 20px;
+}
+
+.contact-location,
+.contact-phone,
+.contact-mail,
+.leaflet-heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.leaflet-heading {
+  margin-bottom: 20px;
+}
+
+.leaflet-map-header {
+  font-size: 16pt;
+}
+
+.leaflet-heading i {
+  color: #11cf0d;
+  font-size: 30pt;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 420px) {
+  .header-wrapper {
+    height: calc(20em + 3vh);
+    width: 100%;
+  }
+
+  .ekosem-navbar {
+    display: none;
+    height: 0;
+  }
+
+  .ekosem-logo-wrapper {
+    height: 80%;
+  }
+
+  .mobile-menu-collapse {
+    position: relative;
+    top: 0;
+    width: 100%;
+  }
+
+  .mobile-menu-bar,
+  .mobile-menu-bar-collapsed {
+    display: block;
+  }
+
+  .schooling-sign-up-wrapper {
+    height: calc(70em + 2vh);
+  }
+
+  .schooling-sign-up-header {
+    font-size: 14px;
+  }
+
+  .schooling-sign-up-header {
+    width: 80%;
+  }
+
+  .ekosem-nav-links {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .nav-span {
+    font-size: 1em;
+    font-weight: bold;
+  }
+
+  .main-slider-container {
+    height: calc(40em + 10vh);
+  }
+
+  .post-slider-wrapper {
+    width: 90%;
+  }
+
+  .slider-post-title {
+    text-align: center;
+  }
+
+  .slider-post-excerpt {
+    width: 100%;
+  }
+
+  .ekosem-footer-main {
+    width: 80%;
+    flex-direction: column;
+  }
+
+  .ekosem-footer-span {
+    justify-content: center;
+    font-weight: normal;
+    font-size: 1em;
+  }
+
+  /*STYLE NA SEKCJE STRONY (WP PAGE)*/
+
+  .page-wrapper {
+    width: 90%;
+  }
+
+  .page-title {
+    margin-top: 40px;
+  }
+
+  .page-title h2 {
+    font-size: 1.6em;
+  }
+
+  .page-content {
+    letter-spacing: 0.1px;
+  }
+
+  /*SEKCJA KONTAKTOWA*/
+
+  .ekosem-contact-wrapper {
+    width: 90%;
+  }
+
+  .contact-wrapper {
+    width: 90%;
+  }
+
+  .leaflet-heading {
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+  /*WPISY POSZCZEGÓLNYCH SEKCJI*/
+
+  .post-wrapper {
+    width: 90%;
+  }
+
+  .post-content-text {
+  }
+
+  .post-title {
+  }
+
+  .post-comments {
+    width: 100%;
+  }
+
+  .post-comm-meta {
+    padding: 5px;
+  }
+
+  .post-comments-text {
+    text-align: center;
+  }
+
+  .display-recent-posts li {
+    padding-left: 10px;
+  }
+
+  .display-recent-posts li a {
+    text-align: right;
+    padding-right: 10px;
+  }
+
+  .recent-posts-header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (min-width: 421px) and (max-width: 850px) {
+  .header-wrapper {
+    height: calc(10em + 3vh);
+    width: 100%;
+  }
+
+  .ekosem-navbar {
+    display: none;
+    max-height: 0;
+  }
+
+  .ekosem-logo-wrapper {
+    height: 100%;
+  }
+
+  .mobile-menu-collapse {
+    position: relative;
+    top: 0;
+    width: 100%;
+  }
+
+  .mobile-menu-bar,
+  .mobile-menu-bar-collapsed {
+    display: block;
+  }
+
+  .schooling-sign-up-wrapper {
+    height: calc(60em + 2vh);
+  }
+
+  .schooling-sign-up-header {
+    width: 80%;
+  }
+
+  .ekosem-nav-links {
+    height: 0;
+  }
+
+  .nav-span {
+    font-size: 1em;
+    font-weight: bold;
+  }
+
+  .main-slider-container {
+    height: calc(40em + 10vh);
+  }
+
+  .post-slider-wrapper {
+    width: 90%;
+  }
+
+  .slider-post-title {
+    text-align: center;
+  }
+
+  .slider-post-excerpt {
+    width: 100%;
+  }
+
+  .ekosem-footer-main {
+    width: 80%;
+    flex-direction: column;
+  }
+
+  .ekosem-footer-span {
+    justify-content: center;
+    font-weight: normal;
+    font-size: 1em;
+  }
+
+  /*STYLE NA SEKCJE STRONY (WP PAGE)*/
+
+  .page-wrapper {
+    width: 90%;
+  }
+
+  .page-title {
+    margin-top: 40px;
+  }
+
+  .page-title h2 {
+    font-size: 1.6em;
+  }
+
+  .page-content {
+    letter-spacing: 0.1px;
+  }
+
+  /*SEKCJA KONTAKTOWA*/
+
+  .ekosem-contact-wrapper {
+    width: 90%;
+  }
+
+  .contact-wrapper {
+    width: 90%;
+  }
+
+  .leaflet-heading {
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+  /*WPISY POSZCZEGÓLNYCH SEKCJI*/
+
+  .post-wrapper {
+    width: 90%;
+  }
+
+  .post-comments {
+    width: 100%;
+  }
+
+  .post-comm-meta {
+    padding: 5px;
+  }
+
+  .post-comments-text {
+    text-align: center;
+  }
+
+  .display-recent-posts li {
+    padding-left: 10px;
+  }
+
+  .display-recent-posts li a {
+    text-align: right;
+    padding-right: 10px;
+  }
+
+  .recent-posts-header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (min-width: 851px) and (max-width: 1060px) {
+  .header-wrapper {
+    height: calc(15em + 3vh);
+    width: 100%;
+  }
+
+  .ekosem-nav-links {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .nav-span {
+    font-size: 1em;
+    font-weight: bold;
+  }
+
+  .main-slider-container {
+    height: calc(35em + 10vh);
+  }
+
+  .post-slider-wrapper {
+    width: 90%;
+  }
+
+  .slider-post-title {
+    text-align: center;
+  }
+
+  .slider-post-excerpt {
+    width: 100%;
+  }
+
+  .ekosem-footer-main {
+    width: 80%;
+  }
+
+  .ekosem-footer-span {
+    justify-content: center;
+    font-weight: normal;
+    font-size: 1em;
+  }
+
+  /*STYLE NA SEKCJE STRONY (WP PAGE)*/
+
+  .page-wrapper {
+    width: 90%;
+  }
+
+  .page-title {
+    margin-top: 40px;
+  }
+
+  .page-title h2 {
+    font-size: 1.6em;
+  }
+
+  .page-content {
+    letter-spacing: 0.1px;
+  }
+
+  /*SEKCJA KONTAKTOWA*/
+
+  .ekosem-contact-wrapper {
+    width: 90%;
+  }
+
+  .contact-wrapper {
+    width: 90%;
+  }
+
+  .leaflet-heading {
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+  /*WPISY POSZCZEGÓLNYCH SEKCJI*/
+
+  .post-wrapper {
+    width: 90%;
+  }
+
+  .post-comments {
+    width: 100%;
+  }
+
+  .post-comm-meta {
+    padding: 5px;
+  }
+
+  .post-comments-text {
+    text-align: center;
+  }
+
+  .display-recent-posts li {
+    padding-left: 10px;
+  }
+
+  .display-recent-posts li a {
+    text-align: right;
+    padding-right: 10px;
+  }
+
+  .recent-posts-header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (min-width: 1061px) and (max-width: 1368px) {
+  .header-wrapper {
+    height: calc(15em + 3vh);
+    width: 100%;
+  }
+
+  .ekosem-nav-links {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .nav-span {
+    font-size: 1.2em;
+    font-weight: normal;
+  }
+
+  .main-slider-container {
+    height: calc(35em + 10vh);
+  }
+
+  .post-slider-wrapper {
+    width: 90%;
+  }
+
+  .slider-post-title {
+    text-align: center;
+  }
+
+  .slider-post-excerpt {
+    width: 100%;
+  }
+
+  .ekosem-footer-main {
+    width: 80%;
+  }
+
+  .ekosem-footer-span {
+    justify-content: center;
+    font-weight: normal;
+    font-size: 1em;
+  }
+
+  /*STYLE NA SEKCJE STRONY (WP PAGE)*/
+
+  .page-wrapper {
+    width: 90%;
+  }
+
+  .page-title {
+    margin-top: 40px;
+  }
+
+  .page-title h2 {
+    font-size: 1.6em;
+  }
+
+  .page-content p {
+    letter-spacing: 0.1px;
+    font-size: 1.1em;
+  }
+
+  /*SEKCJA KONTAKTOWA*/
+
+  .ekosem-contact-wrapper {
+    width: 90%;
+  }
+
+  .contact-wrapper {
+    width: 90%;
+  }
+
+  .leaflet-heading {
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+  /*WPISY POSZCZEGÓLNYCH SEKCJI*/
+
+  .post-wrapper {
+    width: 90%;
+  }
+
+  .post-title h3 {
+    font-size: 2em;
+  }
+
+  .post-content-text p {
+    font-size: 1.2em;
+  }
+
+  .post-comments {
+    width: 100%;
+  }
+
+  .post-comm-meta {
+    padding: 5px;
+  }
+
+  .post-comments-text {
+    text-align: center;
+  }
+
+  .display-recent-posts li {
+    padding-left: 10px;
+  }
+
+  .display-recent-posts li a {
+    text-align: right;
+    padding-right: 10px;
+  }
+
+  .recent-posts-header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
