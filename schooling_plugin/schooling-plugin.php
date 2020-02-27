@@ -4,10 +4,10 @@
 */
 
 /*
-Plugin Name: Szkolenia Ekosem
+Plugin Name: Szkolenia 
 Description: Twórz harmonogramy szkoleń i zarządzaj nimi.
 Version: 1.0.0
-Author: Titan PJMM
+Author: mnonna
 Licence: GPLv2
 */
 
@@ -24,7 +24,7 @@ file_put_contents(ABSPATH. 'wp-content/plugins/PLUGIN_FOLDER/error.html', ob_get
 function ekosem_plugin_styles() {
     $plugin_url = plugin_dir_url( __FILE__ );
 
-    wp_enqueue_style( 'style',  $plugin_url . "ekosem-plugin-style.css");
+    wp_enqueue_style( 'style',  $plugin_url . "schooling-plugin-style.css");
 
     wp_register_style( 'material', 'https://fonts.googleapis.com/icon?family=Material+Icons');
     wp_enqueue_style('material');
@@ -42,8 +42,8 @@ function ekosem_scripts(){
 add_action( 'admin_menu', 'custom_post_type' );
 function custom_post_type(){
     $menu = add_menu_page(
-        __( 'Ekosem Szkolenia', 'my-textdomain' ),
-        __( 'Ekosem Szkolenia', 'my-textdomain' ),
+        __( 'Szkolenia', 'my-textdomain' ),
+        __( 'Szkolenia', 'my-textdomain' ),
         'manage_options',
         'szkolenia-plugin',
         'ekosem_plugin_page',
