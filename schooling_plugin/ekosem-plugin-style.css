@@ -1,0 +1,135 @@
+.ekosem-plugin-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: rgba(16, 207, 13, 0.781);
+  min-height: 100vh;
+}
+
+.ekosem-plugin-main,
+.ekosem-schoolings {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ekosem-declarants {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.ekosem-plugin-main {
+  width: 60%;
+  background-color: azure;
+}
+
+.ekosem-schoolings,
+.ekosem-declarants {
+  width: 100%;
+}
+
+.ekosem-schooling-item-dropdown,
+.ekosem-declarants-item-dropdown {
+  width: 95%;
+  height: 50px;
+  background-color: rgb(105, 105, 105);
+  color: white;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  font-family: sans-serif;
+  border-bottom: 2px solid white;
+}
+
+.ekosem-schooling-item-dropdown span,
+.ekosem-declarants-item-dropdown span {
+  text-decoration: none;
+  cursor: pointer;
+  user-select: none;
+  margin-left: 10px;
+}
+
+.open-ekosem-schooling-item,
+.open-declarants-schooling-item {
+  margin-right: 10px;
+  user-select: none;
+}
+
+.ekosem-schooling-item-data,
+.ekosem-declarants-item-data {
+  width: 95%;
+  height: auto;
+  background-color: rgb(236, 236, 236);
+  color: rgb(0, 0, 0);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.add-schooling-wrapper {
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.main-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.add-schooling-form,
+.main-form {
+  width: 100%;
+}
+
+.form-group {
+  width: 80%;
+}
+
+.form-control {
+  width: 100%;
+}
+
+.confirm-participants {
+  margin-top: 30px;
+  outline: none;
+  background-color: #11cf0d;
+  border: none;
+  color: white;
+  padding: 10px 26px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: "Century Gothic";
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 2px 2px 2px 2px;
+  transition: color 0.1s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.schooling-current-participants {
+  width: 50%;
+  margin-bottom: 20px;
+}
+
+.participants-table {
+  width: 100%;
+}
+
+.participants-table,
+.participants-table th,
+.participants-table td {
+  border: 2px solid #11cf0d;
+}
+
+.participants-table td {
+  text-align: center;
+}
